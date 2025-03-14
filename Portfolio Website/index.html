@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luther Akinbodun Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="images/letterL.jpg">
+</head>
+<body>
+
+
+    <header class="header">
+        <a href="#" class="logo"><span>Luther Akinbodun</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <a href="https://github.com/lutherbodun" target="_blank">
+        <button class="visit-btn">Visit Github</button>
+        </a>
+    </header>
+
+    <section id="home" class = "home">
+        <div class="home-container">
+            <img src="/images/luthergrad.png" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Luther Akinbodun</h1>
+                    <span class= "im">I'm a</span><span2 class="developer">Software Developer</span2>
+                </div>
+
+                <div class="btn-group">
+                    <a href="pdf/Luther_Akinbodun_Resume.pdf"><div class="btn">Download Resume</div></a>
+                    <a href="#contact">
+                    <div class="btn">Contact</div>
+                </a>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/lutherbodun" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/luther-akinbodun-43ba06232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class = "about">
+        <h2 class = "section-title"> About</h2>
+        <div class = "about-grid">
+            <div class = "about-card">
+        <p>I'm a Software Developer with a Bachelor's degree in Computer Science, specializing in 
+            Software Engineering, from the University of Windsor. 
+            I’m passionate about solving problems—whether they’re big or small—by creating 
+            innovative solutions. 
+            My expertise spans multiple areas of Computer Science, including Web Development, 
+            Cybersecurity, with some experience in Computer Graphics, Game Development, 
+            and Artificial Intelligence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2 class="section-title"> Recent Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/letterL.jpg" alt="">
+                <h3>Portfolio Website (This Website)</h3>
+                <p>My personal portfolio website built with JavaScript, HTML, and styled with CSS, 
+                    showcasing my skills, projects, and contact information.
+                </p>
+                <div class="btn-group">
+                    <a href="https://lutherakinbodun.netlify.app/"><div class="btn">Live Demo</div></a>
+                    <a href="https://github.com/lutherbodun/twitchbotMR" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/twitchpic.png" alt="">
+                <h3>Marvel Rivals Twitch Bot</h3>
+                <p>A Twitch bot built with JavaScript, Node.js, and Tmi.js that provides information about 
+                    the abilities of characters in the game 'Marvel Rivals' when viewers ask in the Twitch chat.
+                </p>
+                <div class="btn-group">
+                    <div class="btn" id="openVideoBtn1">Demo Video</div>
+                    <a href="https://github.com/lutherbodun/twitchbotMR" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <!-- Modal for Marvel Rivals Twitch Bot -->
+            <div id="videoModal1" class="modal">
+                <span class="close" id="closeBtn1">&times;</span>
+                <video width="100%" height="auto" controls>
+                    <source src="videos/twitchbotmrdemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="project-card">
+                <img src="images/discordpic.png" alt="">
+                <h3>Discord Bot</h3>
+                <p>A Discord bot built with JavaScript, Node.js, and Discord.js that detects 
+                    when a Twitch user goes live and sends a message to a Discord server with a link to join the stream.
+                </p>
+                <div class="btn-group">
+                    <a href="https://github.com/lutherbodun/discordbot" target="_blank"><div class="btn">Demo</div></a>
+                    <a href="https://github.com/lutherbodun/discordbot" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <div class="project-card hidden">
+                <img src="images/twitchpic.png" alt="">
+                <h3>Greeting Twitch Bot</h3>
+                <p>A Twitch bot built with JavaScript, Node.js, and Tmi.js that detects specific 
+                    words in Twitch chat and responds instantly to viewers.
+                </p>
+                <div class="btn-group">
+                    <div class="btn" id="openVideoBtn2">Demo Video</div>
+                    <a href="https://github.com/lutherbodun/greetingtwitchbot" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <div id="videoModal2" class="modal2">
+                <span class="close" id="closeBtn2">&times;</span>
+                <video width="100%" height="auto" controls>
+                    <source src="videos/twitchbotgreetdemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="project-card hidden">
+                <img src="/images/scoreboardpic.png" alt="">
+                <h3>Scoreboard</h3>
+                <p>A JavaScript application that lets users 
+                    track the score between two teams or individuals.
+                </p>
+                <div class="btn-group">
+                    <div class="btn" id="openVideoBtn3">Demo Video</div>
+                    <a href="https://github.com/lutherbodun/scoreboard" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <!-- Modal for Scoreboard -->
+            <div id="videoModal3" class="modal3">
+                <span class="close" id="closeBtn3">&times;</span>
+                <video width="100%" height="auto" controls>
+                    <source src="videos/scoreboarddemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="project-card hidden">
+                <img src="images/timerpic.png" alt="">
+                <h3>Timer</h3>
+                <p>A JavaScript application that allows users to set a custom time, 
+                    start and pause the timer at any point, and adjust the time during the countdown.
+                </p>
+                <div class="btn-group">
+                    <div class="btn" id="openVideoBtn4">Demo Video</div>
+                    <a href="https://github.com/lutherbodun/timer" target="_blank"><div class="btn">Github Repo</div></a>
+                </div>
+            </div>
+
+            <!-- Modal for Timer -->
+            <div id="videoModal4" class="modal4">
+                <span class="close" id="closeBtn4">&times;</span>
+                <video width="100%" height="auto" controls>
+                    <source src="videos/timerdemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class = "load-more-btn-container">
+                <button id= "load-more-btn" class = "load-more-btn">Load More <span id= "remaining-count">(5)</span></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Development</span>
+                    <div class ="languages">
+                    <p> <i class="fa-brands fa-js"></i> Javascript</p>
+                    <p> <i class="fa-brands fa-html5"></i> HTML </p>
+                    <p> <i class="fa-brands fa-css"></i> CSS </p>
+                </div>
+            </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Backend Development</span>
+                    <div class ="languages">
+                    <p> <i class="fa-brands fa-node"></i> Node.js</p>
+                    <p> <i class="fa-brands fa-twitch"></i> Tmi.js </p>
+                    <p> <i class="fa-brands fa-discord"></i> Discord.js </p>
+                    <p> <i class="fa-solid fa-envelope"></i> Dotenv</p>
+                    <p> <i class="fa-solid fa-database"></i></i> SQL</p>
+                </div>
+            </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Programming</span>
+                    <div class ="languages">
+                    <p> <i class="fa-brands fa-java"></i> Java </p>
+                    <p> <i class="fa-brands fa-python"></i> Python</p>
+                    <p> <i class="fa-solid fa-c"></i> C/C++</p>
+                    <p> <i class="fa-solid fa-code"></i> Typescript/Javascript </p>
+                    <p> <i class="fa-solid fa-code"></i> C#</p>
+                </div>
+            </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Development Tools</span>
+                <div class ="languages">
+                    <p> <i class="fa-solid fa-terminal"></i> VS Code </p>
+                    <p> <i class="fa-brands fa-github"></i> GitHub </p>
+                    <p> <i class="fa-solid fa-terminal"></i> JetBrains Tools </p>
+                    <p> <i class="fa-brands fa-npm"></i> Npm</p>
+                    <p> <i class="fa-brands fa-unity"></i> Unity </p>
+                    <p> <i class="fa-solid fa-code"></i> JUnit </p>
+                </div>
+            </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Design Tools</span>
+                    <div class ="languages">
+                    <p> <i class="fa-solid fa-p"></i> Photoshop</p>
+                    <p> <i class="fa-solid fa-i"></i> Illustrator</p>
+                    <p> <i class="fa-solid fa-p"></i> Premiere Pro </p>
+                    <p> <i class="fa-solid fa-b"></i> Blender</p>
+                    <p> <i class="fa-solid fa-a"></i> Adobe Animate</p>
+                </div>
+            </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Cybersecurity</span>
+                    <div class ="languages">
+                    <p> <i class="fa-solid fa-wifi"></i> WireShark </p>
+                    <p> <i class="fa-brands fa-windows"></i> Windows Defender </p>
+                    <p> <i class="fa-brands fa-twitch"></i> Twitch Authenticator </p>
+                    <p> <i class="fa-brands fa-discord"></i> Discord Authenticator </p>
+                </div>
+            </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+
+        <h2 class="contact-title"> Contact Me</h2>
+
+        <div class="gridc">
+            <div class="grid-cardc">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+                <a href="mailto:Lbodun@gmail.com"><button class ="btn-c"><p>Send an Email</p></button></a>
+            </div>
+
+            <div class="grid-cardc">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/luther-akinbodun-43ba06232/" target="_blank"><button class= "btn-c"><p>Connect on LinkedIn</p></button></a>
+            </div>
+
+            <div class="grid-cardc">
+                <i class="fa-solid fa-window-maximize"></i>
+                <span>Portfolio Website</span>
+                <a href="https://lutherakinbodun.netlify.app/" target="_blank"><button class= "btn-c"><p>Click Here</p></button></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+
+            </li>
+        </ul>
+
+        <p class="copyright">&copy; All Rights Reserved | Luther Akinbodun</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
